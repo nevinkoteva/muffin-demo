@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:menu="urn:jsptagdir:/WEB-INF/tags/menu" id="menu" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <menu:menu id="_menu" z="nZaf43BjUg1iM0v70HJVEsXDopc=">
+        <menu:category id="c_muffinorder" z="jqTA10wiViUamEJpOASVaJRjsvg=">
+            <menu:item id="i_muffinorder_new" messageCode="global_menu_new" url="/muffinorders?form" z="L/cQGTWeO/bvrJTh9pC9cYpC4Rg="/>
+            <menu:item id="i_muffinorder_list" messageCode="global_menu_list" url="/muffinorders?page=1&amp;size=${empty param.size ? 10 : param.size}" z="O64NIsGN6PaKM19hY9evFuSNCxs="/>
+        </menu:category>
+        <menu:category id="c_icing" z="dtvkY3cS5N/PQfxq07FB7aEKjNs=">
+            <menu:item id="i_icing_new" messageCode="global_menu_new" url="/icings?form" z="w/IVEjl6qbYAIkTl4ESHNV89DzU="/>
+            <menu:item id="i_icing_list" messageCode="global_menu_list" url="/icings?page=1&amp;size=${empty param.size ? 10 : param.size}" z="a77qgES2dfgmI8w/4rpTr3Zo3lQ="/>
+        </menu:category>
+        <menu:category id="c_muffin" z="C+yRmeatWivbm2/Z9AqQc1uXuUQ=">
+            <menu:item id="i_muffin_new" messageCode="global_menu_new" url="/muffins?form" z="+emxiyYww6UO89jnh9wZRQf9m4Y="/>
+            <menu:item id="i_muffin_list" messageCode="global_menu_list" url="/muffins?page=1&amp;size=${empty param.size ? 10 : param.size}" z="ATh2jMc7mUbFKf6Y9xLL7DuDq00="/>
+        </menu:category>
+        <menu:category id="c_base" z="yTpmmNMm/hWoy3yf+aPcdUX2At8=">
+            <menu:item id="i_base_new" messageCode="global_menu_new" url="/bases?form" z="+i6N/uFq65rRQkyN9G93ZSDxIec="/>
+            <menu:item id="i_base_list" messageCode="global_menu_list" url="/bases?page=1&amp;size=${empty param.size ? 10 : param.size}" z="IjVNhoTFsVL/VpAHVFlKm0YDCNs="/>
+        </menu:category>
+    </menu:menu>
+</div>

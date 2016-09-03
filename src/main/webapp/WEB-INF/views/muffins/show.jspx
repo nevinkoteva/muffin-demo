@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_musala_muffinshop_domain_Muffin" object="${muffin}" path="/muffins" z="khJIfymPaOzpz7UFABtrPmSGVYc=">
+        <field:display field="name" id="s_com_musala_muffinshop_domain_Muffin_name" object="${muffin}" z="5HNocgHdCEExFiEihbgRvJGvnyg="/>
+        <field:display field="price" id="s_com_musala_muffinshop_domain_Muffin_price" object="${muffin}" z="UBEIxRpjNMq7IBtsfmqli284Thg="/>
+        <field:display field="icings" id="s_com_musala_muffinshop_domain_Muffin_icings" object="${muffin}" z="jWkO/nd0kYQbSVShk90LZDj9HxE="/>
+        <field:display field="base" id="s_com_musala_muffinshop_domain_Muffin_base" object="${muffin}" z="+eqhCMqkvyV6B2K/F/JbiJf4gCc="/>
+    </page:show>
+</div>

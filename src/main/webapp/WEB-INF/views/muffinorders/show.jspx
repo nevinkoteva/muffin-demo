@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_musala_muffinshop_domain_MuffinOrder" object="${muffinorder}" path="/muffinorders" z="gAu59C2dTyAqX+pJMTJ3u/gXuAU=">
+        <field:display field="name" id="s_com_musala_muffinshop_domain_MuffinOrder_name" object="${muffinorder}" z="zLpDznKwoggk3ggV9ySnPxp8I04="/>
+        <field:display field="address" id="s_com_musala_muffinshop_domain_MuffinOrder_address" object="${muffinorder}" z="Xt1bM26EzbTqEh+PeJR1S62yCQU="/>
+        <field:display field="total" id="s_com_musala_muffinshop_domain_MuffinOrder_total" object="${muffinorder}" z="BntMbby6GCbRihuCtYBxTwXvVhE="/>
+        <field:display date="true" dateTimePattern="${muffinOrder_deliverydate_date_format}" field="deliveryDate" id="s_com_musala_muffinshop_domain_MuffinOrder_deliveryDate" object="${muffinorder}" z="jxBlq+BQNNB04pohNFGLSkoqwJ8="/>
+        <field:display field="muffins" id="s_com_musala_muffinshop_domain_MuffinOrder_muffins" object="${muffinorder}" z="QlfVjAeHvsKy9a7AuFrsehk0Ghk="/>
+    </page:show>
+</div>

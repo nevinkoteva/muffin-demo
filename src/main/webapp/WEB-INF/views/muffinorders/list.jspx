@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_musala_muffinshop_domain_MuffinOrder" items="${muffinorders}" z="8ldXkf5Cldief6SS75gljv7aDPM=">
+        <table:table data="${muffinorders}" id="l_com_musala_muffinshop_domain_MuffinOrder" path="/muffinorders" z="ey0vkOQnSvXTnf7UpIbXsfLzkBo=">
+            <table:column id="c_com_musala_muffinshop_domain_MuffinOrder_name" property="name" z="ee4XQ/zqS3ZURibB/kgDIrxcsac="/>
+            <table:column id="c_com_musala_muffinshop_domain_MuffinOrder_address" property="address" z="LtjpQWCk5qFtJ60GDnFEYmzyJio="/>
+            <table:column id="c_com_musala_muffinshop_domain_MuffinOrder_total" property="total" z="80lTg4qz0zNAU7uTNmgzUhGmCws="/>
+            <table:column date="true" dateTimePattern="${muffinOrder_deliverydate_date_format}" id="c_com_musala_muffinshop_domain_MuffinOrder_deliveryDate" property="deliveryDate" z="gLrs6rki4LhKMu1jb72OKwtPojA="/>
+            <table:column id="c_com_musala_muffinshop_domain_MuffinOrder_muffins" property="muffins" z="GeTFfeES8uQxVvBm2M5zennrR1A="/>
+        </table:table>
+    </page:list>
+</div>
