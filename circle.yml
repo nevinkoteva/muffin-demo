@@ -15,5 +15,5 @@ deployment:
     branch: master
     commands:
       - mvn clean install -DskipTests=true
-      - cp muffin-demo/target/muffinshop-0.1.0.BUILD-SNAPSHOT.war $CIRCLE_ARTIFACTS/muffinshop-0.1.0.BUILD-SNAPSHOT.war
+      - cp /home/ubuntu/muffin-demo/target/muffinshop-0.1.0.BUILD-SNAPSHOT.war $CIRCLE_ARTIFACTS/muffinshop-0.1.0.BUILD-SNAPSHOT.war
       - rm $CIRCLE_ARTIFACTS/muffinshop-0.1.0.BUILD-SNAPSHOT.war
