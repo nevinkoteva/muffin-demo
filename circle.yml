@@ -1,0 +1,22 @@
+##########################################################################
+# Customize the default test command				         			 #
+# To enable code coverage:                                               #
+# test:                                                                  #
+#	override:                                                        	 #
+#          - mvn clean cobertura:cobertura                               #
+#          - mv muffin-demo/target/site/cobertura $CIRCLE_ARTIFACTS		 #
+##########################################################################
+test:
+  post:
+      - mv muffin-demo/target/surefire-reports/*.xml $CIRCLE_TEST_REPORTS
+
+############################################################################
+# Deploy to the production from master and to the qa from feature branches #
+############################################################################
+deployment:
+  production:
+    branch: master
+    commands:
+      - mvn clean install -DskipTests=true
+      - cp muffin-demo/target/muffinshop-0.1.0.BUILD-SNAPSHOT.war $CIRCLE_ARTIFACTS/muffinshop-0.1.0.BUILD-SNAPSHOT.war
+      - rm $CIRCLE_ARTIFACTS/muffinshop-0.1.0.BUILD-SNAPSHOT.war
